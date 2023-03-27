@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Github from "./Github";
+import Job from './Job';
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
@@ -44,6 +45,12 @@ function About() {
           <strong className="purple">Tools</strong> I use
         </h1>
         <Toolstack />
+
+        <h1 className="project-heading">
+          <strong className="purple">Work |</strong> Companies
+        </h1>
+        
+        <Job />
 
         <Github />
       </Container>
