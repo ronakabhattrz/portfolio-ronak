@@ -56,8 +56,10 @@ export class SingleBlog extends Component {
     let post
     if(this.state.singlePost){
      post =( <>
-       <h2>{this.state.singlePost.title}</h2>
-        <div className={c.avatar}>
+       <div className="blog-section container">
+       <div className="row equal">
+        <h2>{this.state.singlePost.title}</h2>
+        <div className={`my-3 ${c.avatar}`}>
           <a
             href={this.state.profileLink}
             rel="noopener noreferrer"
@@ -70,6 +72,7 @@ export class SingleBlog extends Component {
             href={this.state.profileLink}
             rel="noopener noreferrer"
             target="_blank"
+            className={'text-decoration-none'}
           >
             <p>{this.state.singlePost.author}</p>
           </a>
@@ -78,12 +81,14 @@ export class SingleBlog extends Component {
   
       <div className={c.content}  dangerouslySetInnerHTML={{ __html:this.state.singlePost.content}}>
           </div>
+          </div>
+          </div>
       </>
      )
     }
-    // if(this.state.isloading){
-    //   post = <Spinner/>
-    // }
+    if(this.state.isloading){
+      post = <Spinner/>
+    }
     if(this.state.error){
    let   error = this.state.error.code ? this.state.error.code : this.state.error.name;
       let errorMsg = this.state.error.message;
