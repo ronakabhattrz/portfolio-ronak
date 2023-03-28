@@ -35,20 +35,20 @@ function About() {
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
-        <h1 className="project-heading">
+        <h2 className="project-heading">
           Professional <strong className="purple">Skillset </strong>
-        </h1>
+        </h2>
 
         <Techstack />
 
-        <h1 className="project-heading">
+        <h2 className="project-heading">
           <strong className="purple">Tools</strong> I use
-        </h1>
+        </h2>
         <Toolstack />
 
-        <h1 className="project-heading">
+        <h2 className="project-heading">
           <strong className="purple">Work |</strong> Companies
-        </h1>
+        </h2>
         
         <Job />
 

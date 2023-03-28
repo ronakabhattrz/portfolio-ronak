@@ -81,6 +81,9 @@ export class Blog extends Component {
     }
     return (
       <div className="blog-section container">
+        <h1 className="project-heading my-4">
+          My Recent <strong className="purple">Blogs </strong>
+        </h1>
         <div className="row equal">
           {/* {this.state.item.map((post, index) => (
           <ShowBlog key={index} {...post} {...this.state.profile} {...index} />
