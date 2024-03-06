@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Blog from "./components/Blog/Blog";
 import SingleBlog from "./components/SingleBlog/SingleBlog";
+import Contact from "./components/contact/contact";
 
 import {
   BrowserRouter as Router,
@@ -42,6 +43,7 @@ function App() {
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/blogs" element={<Blog />} />
           <Route path="/blogs/:id" element={<SingleBlog />}></Route>
 
